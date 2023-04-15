@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./assets/images/favicon.png"
+    />
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./build/style.css" />
     <title>AXIT</title>
   </head>
   <body>
@@ -22,6 +28,15 @@
             <p><a href="#reviews">Reviews</a></p>
             <p><a href="#contact">Contact</a></p>
           </div>
+          <input type="checkbox" id="burger" />
+          <label for="burger"></label>
+          <div class="header_links_burger">
+            <p><a href="#features">Features</a></p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#pricing">Pricing</a></p>
+            <p><a href="#reviews">Reviews</a></p>
+            <p><a href="#contact">Contact</a></p>
+          </div>
         </div>
       </header>
       <div class="mainpage">
@@ -31,7 +46,7 @@
               <div class="mainpage_info">
                 <div class="mainpage_logo">
                   <img src="./assets/images/AX_large.svg" alt="AX" />
-                  <img src="./assets/images/IT_large (2).svg" alt="IT" />
+                  <img src="./assets/images/IT_large2.svg" alt="IT" />
                 </div>
                 <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                 <div class="mainpage_separator"></div>
@@ -64,12 +79,12 @@
             </h5>
           </div>
           <div class="mainpage_footer_icons">
-            <img src="./assets/images/fb_icon.svg" alt="Facebook" />
-            <img src="./assets/images/tw_icon.svg" alt="Twitter" />
-            <img src="./assets/images/in_icon.svg" alt="LinkedIn" />
-            <img src="./assets/images/pint_icon.svg" alt="Pinterest" />
-            <img src="./assets/images/ig_icon.svg" alt="Instagram" />
-            <img src="./assets/images/gh_icon.svg" alt="GitHub" />
+            <img src="./assets/images/facebook_icon.svg" alt="Facebook" />
+            <img src="./assets/images/twitter_icon.svg" alt="Twitter" />
+            <img src="./assets/images/linkedin_icon.svg" alt="LinkedIn" />
+            <img src="./assets/images/pinterest_icon.svg" alt="Pinterest" />
+            <img src="./assets/images/instagram_icon.svg" alt="Instagram" />
+            <img src="./assets/images/github_icon.svg" alt="GitHub" />
             <img src="./assets/images/rss_icon.svg" alt="RSS" />
           </div>
         </div>
@@ -79,7 +94,7 @@
           <div class="tabs_header">
             <p class="active">TAB 1</p>
             <p>TAB 2</p>
-            <p>TAB 3</p>
+            <p class="last_tab">TAB 3</p>
             <p></p>
           </div>
           <div class="tabs_content">
@@ -101,7 +116,16 @@
               </h5>
               <div class="content_button"><button>Download</button></div>
             </div>
-            <img src="./assets/images/Rectangle_111.png" alt="Rectangle_111" />
+            <picture>
+              <source
+                media="(max-width: 1170px)"
+                srcset="./assets/images/rectangle_tablet.png"
+              />
+              <img
+                src="./assets/images/Rectangle_111.png"
+                alt="Rectangle_111"
+              />
+            </picture>
           </div>
         </section>
         <section class="awesome" id="about">
@@ -329,6 +353,71 @@
               </div>
             </div>
           </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews_customers">
+                  <div class="reviews_customers_rectangle">
+                    <p>
+                      Lorem ipsum dolor sit amet, <br />
+                      consectetur adipisicing elit. Doloribus accusamus expedita
+                      repellat similique odio aspernatur ex, architecto eaque
+                      <br />
+                      quo suscipit.
+                    </p>
+                  </div>
+                  <div class="reviews_customers_names">
+                    <img src="./assets/images/davis.png" alt="Davis" />
+                    <div class="customers_names_item">
+                      <h4>Davis Rhiel Madsen</h4>
+                      <h5>Manager</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews_customers">
+                  <div class="reviews_customers_rectangle">
+                    <p>
+                      Lorem ipsum dolor sit amet, <br />
+                      consectetur adipisicing elit. Doloribus accusamus expedita
+                      repellat similique odio aspernatur ex, architecto eaque
+                      <br />
+                      quo suscipit.
+                    </p>
+                  </div>
+                  <div class="reviews_customers_names">
+                    <img src="./assets/images/jaydon.png" alt="Jaydon" />
+                    <div class="customers_names_item">
+                      <h4>Jaydon Rosser</h4>
+                      <h5>Manager</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews_customers">
+                  <div class="reviews_customers_rectangle">
+                    <p>
+                      Lorem ipsum dolor sit amet, <br />
+                      consectetur adipisicing elit. Doloribus accusamus expedita
+                      repellat similique odio aspernatur ex, architecto eaque
+                      <br />
+                      quo suscipit.
+                    </p>
+                  </div>
+                  <div class="reviews_customers_names">
+                    <img src="./assets/images/cooper.png" alt="Cooper" />
+                    <div class="customers_names_item">
+                      <h4>Cooper Dorwart</h4>
+                      <h5>Manager</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
       </div>
       <div class="banner">
@@ -353,7 +442,7 @@
           <div class="section_header">
             <h2>contact us</h2>
           </div>
-          <div class="section_separator"></div>
+          <div class="contact_section_separator"></div>
           <h5 class="section_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </h5>
@@ -374,16 +463,18 @@
       </div>
       <footer>
         <div class="footer_icons">
-          <img src="./assets/images/fb_icon.svg" alt="Facebook" />
-          <img src="./assets/images/tw_icon.svg" alt="Twitter" />
-          <img src="./assets/images/in_icon.svg" alt="LinkedIn" />
-          <img src="./assets/images/pint_icon.svg" alt="Pinterest" />
-          <img src="./assets/images/ig_icon.svg" alt="Instagram" />
-          <img src="./assets/images/gh_icon.svg" alt="GitHub" />
+          <img src="./assets/images/facebook_icon.svg" alt="Facebook" />
+          <img src="./assets/images/twitter_icon.svg" alt="Twitter" />
+          <img src="./assets/images/linkedin_icon.svg" alt="LinkedIn" />
+          <img src="./assets/images/pinterest_icon.svg" alt="Pinterest" />
+          <img src="./assets/images/instagram_icon.svg" alt="Instagram" />
+          <img src="./assets/images/github_icon.svg" alt="GitHub" />
           <img src="./assets/images/rss_icon.svg" alt="RSS" />
         </div>
         <h5>© 2015 Axure Themes</h5>
       </footer>
     </div>
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
